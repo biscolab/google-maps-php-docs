@@ -1,0 +1,17 @@
+{
+  "docs": {
+    "Basics": [
+      "getting-started",
+      "installation",
+      "get-api-key",
+      "testing"
+    ],
+    "Services": [
+      "geocoding",
+      "elevation"
+    ]
+  },
+  "docs-other": {
+    "First Category": ["doc4", "doc5"]
+  }
+}
