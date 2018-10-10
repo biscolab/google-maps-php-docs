@@ -31,13 +31,25 @@ $elevation = new Elevation([
 
 ## Get results
 
+First of all you have to prepare the `locations` variable, it can be a single `Location` object, an array of `Location` objects or a polyline string.
+
+### Single Location object
+
+Create a Location object using latitude and longitude.
+
 ```php
 // get results by single Location object
 $locations = new Location([
 	LatLngFields::LAT => 39.73915360,
 	LatLngFields::LNG => -104.9847034,
 ]);
+```
 
+### Array of Location objects
+
+Using multiple Location objects inside an array
+
+```php
 // or by multiple Location objects
 $locations = [
 	new Location([
@@ -50,13 +62,20 @@ $locations = [
 		LatLngFields::LNG => 99.456,
 	])
 ];
+```
+### Polyline encoded string
 
+Encode a location using the <a href="https://developers.google.com/maps/documentation/utilities/polylinealgorithm" target="_blank">Encoded Polyline Algorithm Format</a>
+
+```php
 // or by polyline
 $locations = 'enc:gfo}EtohhU';
+```
+### Make API call
 
+```php
 // make API call
 $results = $elevation->getByLocations($locations);
-
 ```
 
 ## Use results
@@ -71,7 +90,6 @@ To retrieve the first result you can use the `first` method:
 
 ```php
 $first_result = $results->first();
-
 ```
 
 Every result had the following methods to retrieve member variables:
