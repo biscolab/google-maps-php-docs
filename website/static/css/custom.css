@@ -1,9 +1,5 @@
 /* your custom css */
 
-.homeContainer {
-    background-image: url("/static/img/enrique-alarcon-712753-unsplash-resized.jpg");
-}
-
 @media only screen and (min-device-width: 360px) and (max-device-width: 736px) {
 }
 
