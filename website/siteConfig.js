@@ -9,16 +9,16 @@
 // site configuration options.
 
 // List of projects/orgs using your project for the users page.
-const users = [
-	{
-		caption: 'User1',
-		// You will need to prepend the image path with your baseUrl
-		// if it is not '/', like: '/test-site/img/biscolab_white.svg'.
-		image: '/img/biscolab_white.svg',
-		infoLink: 'https://www.biscolab.com',
-		pinned: true
-	}
-];
+// const users = [
+// 	{
+// 		caption: 'User1',
+// 		// You will need to prepend the image path with your baseUrl
+// 		// if it is not '/', like: '/test-site/img/biscolab_white.svg'.
+// 		image: '/img/biscolab_white.svg',
+// 		infoLink: 'https://www.biscolab.com',
+// 		pinned: true
+// 	}
+// ];
 
 const siteConfig = {
 	title: 'Google Maps PHP SDK', // Title for your website.
@@ -46,7 +46,7 @@ const siteConfig = {
 	],
 
 	// If you have users set above, you add it here:
-	users,
+	// users,
 
 	/* path to images for header/footer */
 	headerIcon: 'img/biscolab_white.svg',
@@ -55,7 +55,7 @@ const siteConfig = {
 
 	/* Colors for website */
 	colors: {
-		primaryColor: '#555',
+		primaryColor: '#111',
 		secondaryColor: '#4286f4'
 	},
 
@@ -78,7 +78,7 @@ const siteConfig = {
 
 	highlight: {
 		// Highlight.js theme to use for syntax highlighting in code blocks.
-		theme: 'darcula'
+		theme: 'dracula'
 	},
 
 	// Add custom scripts here that would be placed in <script> tags.
