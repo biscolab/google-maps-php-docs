@@ -34,7 +34,7 @@ class Footer extends React.Component {
 					</a>
 					<div>
 						<h5>Docs</h5>
-						<a href={this.docUrl('getting-started', this.props.language)}>
+						<a href={this.docUrl('getting-started')}>
 							Getting Started
 						</a>
 						{this.props.config.services.map(item => (<a href={this.docUrl(item.url)} key={item.url}>
