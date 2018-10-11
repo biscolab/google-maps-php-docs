@@ -14,8 +14,8 @@ You can find [complete API references](https://biscolab.com/google-maps-php-refe
 ## Google Maps Services
 
 ### Ready
-* [Geocoding](http://10.0.0.111:3000/docs/geocoding)
-* [Elevation](http://10.0.0.111:3000/docs/elevation) (only Positional Requests)
+* [Geocoding](/docs/geocoding)
+* [Elevation](/docs/elevation) (only Positional Requests)
 
 ### ASAP
 * Elevation (Sampled Path Requests - NEXT)
