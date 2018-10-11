@@ -24,6 +24,7 @@ const siteConfig = {
 	title: 'Google Maps PHP SDK', // Title for your website.
 	tagline: 'Unofficial Google Maps PHP library documentation',
 	url: 'https://gmaps.biscolab.com/', // Your website URL
+	cname: 'gmaps.biscolab.com',
 	baseUrl: '/', // Base URL for your project */
 	// For github.io type URLs, you would set the url and baseUrl like:
 	//   url: 'https://facebook.github.io',
