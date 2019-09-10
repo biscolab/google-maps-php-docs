@@ -15,13 +15,13 @@ You can find [complete API references](https://biscolab.com/google-maps-php-refe
 
 ### Ready
 * [Geocoding](/docs/geocoding)
-* [Elevation](/docs/elevation) (only Positional Requests)
+* [Elevation](/docs/elevation) (Positional and Sampled Path Requests)
+* [Places](/docs/places) (Search)
 
 ### ASAP
-* Elevation (Sampled Path Requests - NEXT)
 * Directions (soon)
 * Distance Matrix (soon)
-* Places (soon)
+* Places (Details and Photos: soon)
 * Road (soon)
 * Time Zone (soon)
 

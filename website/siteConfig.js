@@ -23,15 +23,15 @@
 const siteConfig = {
 	title: 'Google Maps PHP SDK', // Title for your website.
 	tagline: 'Unofficial Google Maps PHP library documentation',
-	url: 'https://gmaps.biscolab.com/', // Your website URL
-	cname: 'gmaps.biscolab.com',
+	url: 'https://gmaps-php-docs.biscolab.com/', // Your website URL
+	cname: 'gmaps-php-docs.biscolab.com',
 	baseUrl: '/', // Base URL for your project */
 	// For github.io type URLs, you would set the url and baseUrl like:
 	//   url: 'https://facebook.github.io',
 	//   baseUrl: '/test-site/',
 
 	// Used for publishing and more
-	projectName: 'google-maps-php-docs',
+	projectName: 'google-maps-php',
 	organizationName: 'biscolab',
 	// For top-level user or org sites, the organization is still the same.
 	// e.g., for the https://JoelMarcey.github.io site, it would be set like...
@@ -56,8 +56,8 @@ const siteConfig = {
 
 	/* Colors for website */
 	colors: {
-		primaryColor: '#111',
-		secondaryColor: '#4286f4'
+		primaryColor: '#4286f4',
+		secondaryColor: '#1324f4'
 	},
 
 	/* Custom fonts for website */
@@ -98,6 +98,10 @@ const siteConfig = {
 	// template. For example, if you need your repo's URL...
 	repoUrl: 'https://github.com/biscolab/google-maps-php-sdk',
 	referencesUrl: 'https://biscolab.com/google-maps-php-reference',
+  
+  	gaTrackingId: 'UA-5439279-37',
+
+  	gaGtag: true,
 
 	scrollToTop: true,
 	// custom
@@ -109,6 +113,10 @@ const siteConfig = {
 		{
 			url: "elevation",
 			title: "Elevation"
+		},
+		{
+			url: "places",
+			title: "Place"
 		}
 	]
 };
