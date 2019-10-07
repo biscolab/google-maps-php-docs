@@ -29,7 +29,7 @@ $elevation = new Elevation([
 ]);
 ```
 
-## Get results
+## Get results (Positional Requests)
 
 First of all you have to prepare the `locations` variable, it can be a single `Location` object, an array of `Location` objects or a polyline string.
 
@@ -78,6 +78,44 @@ $locations = 'enc:gfo}EtohhU';
 $results = $elevation->getByLocations($locations);
 ```
 
+## Get results (Sampled Path Requests)
+
+First of all you have to prepare the `path` variable, it can be an array of `Location` objects or a polyline string.
+
+### Array of Location objects
+
+Using multiple Location objects inside an array
+
+```php
+// or by multiple Location objects
+$path = [
+	new Location([
+		LatLngFields::LAT => 39.73915360,
+		LatLngFields::LNG => -104.9847034,
+	]),
+	// ... more locations
+	new Location([
+		LatLngFields::LAT => 50.123,
+		LatLngFields::LNG => 99.456,
+	])
+];
+```
+### Polyline encoded string
+
+Encode a location using the <a href="https://developers.google.com/maps/documentation/elevation/intro#Paths" target="_blank">Encoded Polyline Algorithm Format</a>
+
+```php
+// or by polyline
+$path = 'enc:gfo}EtohhUxD@bAxJmGF';
+```
+### Make API call
+
+```php
+// make API call
+$samples = 5; // must be int > 0
+$results = $elevation->getBySampledPath($path, $samples);
+```
+
 ## Use results
 Results is/are a `Biscolab\GoogleMaps\Http\ElevationResultsCollection` object.  
 First thing you should know how many results there are in your `ElevationResultsCollection` using `count
@@ -92,8 +130,10 @@ To retrieve the first result you can use the `first` method:
 $first_result = $results->first();
 ```
 
-Every result had the following methods to retrieve member variables:
+`$first_result` is an instance of `ElevationResult` class and has the following methods:
 
-* `$first_result->getLocation()` (return Location)
-* `$first_result->getElevation()` (return float)
-* `$first_result->getResolution()` (return float)
+| Method name | Return Type |
+| --------------------- | --------------------- |
+|`getLocation()`  | `Location` |
+|`getElevation()`    | `float` |
+|`getResolution()`    | `float` |

@@ -73,11 +73,13 @@ To retrieve the first result you can use the `first` method:
 $first_result = $results->first();
 ```
 
-Every result had the following methods to retrieve member variables:
+`$first_result` is an instance of `GeocodingResult` class and has the following methods:
 
-* `$first_result->getAddressComponents()` (return Address)
-* `$first_result->getFormattedAddress()` (return string)
-* `$first_result->getGeometry()` (return Geometry)
-* `$first_result->getPlaceId()` (return string)
-* `$first_result->getTypes()` (return array)
+| Method name | Return Type |
+| --------------------- | --------------------- |
+|`getAddressComponents()`  | `Address` |
+|`getFormattedAddress()`    | `string` |
+|`getGeometry()`    | `Geometry` |
+|`getPlaceId()`    | `string` |
+|`getTypes()`    | `array` |
 

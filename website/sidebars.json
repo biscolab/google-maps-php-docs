@@ -2,16 +2,20 @@
   "docs": {
     "Basics": [
       "getting-started",
-      "installation",
       "get-api-key",
-      "testing"
+      "installation"
     ],
     "Services": [
       "geocoding",
-      "elevation"
+      "elevation",
+      "places"
+    ],
+    "Contribute": [
+      "contributing",
+      "code-of-conduct"
+    ],
+    "Help": [
+      "examples"
     ]
-  },
-  "docs-other": {
-    "First Category": ["doc4", "doc5"]
   }
 }

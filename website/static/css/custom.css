@@ -1,9 +1,34 @@
 /* your custom css */
 
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body {
+    font-family: "Open sans", sans-serif;
+    font-size: 14px;
+}
+
+.docMainWrapper {
+    padding: 0;
+}
+
+.docsNavContainer {
+    background-color: #f6f6f6;
+    border-right: 1px solid #eeeeee;
+}
+
 @media only screen and (min-device-width: 360px) and (max-device-width: 736px) {
 }
 
 @media only screen and (min-width: 1024px) {
+    .separateOnPageNav .wrapper, .separateOnPageNav .headerWrapper.wrapper {
+        max-width: 100%;
+    }
+    .fixedHeaderContainer {
+        padding: 14px 0;
+    }
+    .separateOnPageNav .docsNavContainer {
+        padding-left: 20px;
+    }
 }
 
 @media only screen and (max-width: 1023px) {
