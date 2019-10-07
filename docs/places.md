@@ -1,7 +1,7 @@
 ---
 id: places
-title: Places (Search)
-sidebar_label: Places (Search)
+title: Places
+sidebar_label: Places
 ---
 
 The Places API allows you to query for place information on a variety of categories, such as: establishments, prominent points of interest, geographic locations, and more. You can search for places either by proximity or a text string (credits: <a href="https://developers.google.com/places/web-service/search" target="_blank">Official Documentation website</a>.
@@ -162,6 +162,29 @@ $result = $places->textSearch($query, $params);
 
 Find further details about request fields (required, types, etc...) here: <a href="https://developers.google.com/places/web-service/search#TextSearchRequests" target="_blank">https://developers.google.com/places/web-service/search#TextSearchRequests</a>
 
+## Place's Details
+
+```php
+
+use Biscolab\GoogleMaps\Fields\GoogleMapsRequestFields;
+
+$place_id = "ChIJN1t_tDeuEmsRUsoyG83frY4";
+
+$params = [
+    ...
+];
+
+$result = $places->details($place_id, $params);
+```
+
+`details` method accepts 2 arguments
+
+| Name | Type | Description | Default |
+| ------------ | ----------------- | ----------------- | --------------------- |
+| `$place_id` | `string` | A textual identifier that uniquely identifies a place, returned from a **Place Search**. | Required |
+| `$params` | `array` | additional parameters to add to API call | `[]` |
+
+Find further details about request fields (required, types, etc...) here: <a href="https://developers.google.com/places/web-service/details#PlaceDetailsRequests" target="_blank">https://developers.google.com/places/web-service/details#PlaceDetailsRequests</a>
 
 ## Use results
 Results is/are a `Biscolab\GoogleMaps\Http\PlaceResultsCollection` object.  

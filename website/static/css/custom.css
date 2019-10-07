@@ -20,8 +20,14 @@ body {
 }
 
 @media only screen and (min-width: 1024px) {
+    .separateOnPageNav .wrapper, .separateOnPageNav .headerWrapper.wrapper {
+        max-width: 100%;
+    }
     .fixedHeaderContainer {
         padding: 14px 0;
+    }
+    .separateOnPageNav .docsNavContainer {
+        padding-left: 20px;
     }
 }
 
