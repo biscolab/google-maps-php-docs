@@ -1,21 +1,8 @@
 {
   "docs": {
-    "Basics": [
-      "getting-started",
-      "get-api-key",
-      "installation"
-    ],
-    "Services": [
-      "geocoding",
-      "elevation",
-      "places"
-    ],
-    "Contribute": [
-      "contributing",
-      "code-of-conduct"
-    ],
-    "Help": [
-      "examples"
-    ]
+    "Basics": ["getting-started", "get-api-key", "installation"],
+    "Services": ["geocoding", "elevation", "places", "timezone"],
+    "Contribute": ["contributing", "code-of-conduct"],
+    "Help": ["examples"]
   }
 }
